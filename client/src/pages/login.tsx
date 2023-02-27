@@ -18,7 +18,7 @@ export const Login: React.FC = () => {
       }
 
       try {
-        console.log(process.env.REACT_APP_GOOGLE_CLIENT_ID)
+        console.log(process.env.REACT_APP_GOOGLE_CLIENT_ID)  // undefined
         window.google.accounts.id.initialize({
           ux_mode: "popup",
           client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
