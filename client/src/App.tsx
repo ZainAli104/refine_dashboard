@@ -57,7 +57,7 @@ function App() {
       const profileObj = credential ? parseJwt(credential) : null;
 
       if (profileObj) {
-        const response = await fetch('https://refine-dashboard-zainali104.vercel.app/api/v1/users', {
+        const response = await fetch('https://refine-dashboard-g9b87m70z-zainali104.vercel.app/api/v1/users', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -125,7 +125,7 @@ function App() {
       <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
       <RefineSnackbarProvider>
         <Refine
-          dataProvider={dataProvider("https://refine-dashboard-zainali104.vercel.app/api/v1")}
+          dataProvider={dataProvider("https://refine-dashboard-g9b87m70z-zainali104.vercel.app/api/v1")}
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
           catchAll={<ErrorComponent />}
